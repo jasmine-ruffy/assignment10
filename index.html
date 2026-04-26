@@ -77,7 +77,11 @@
 	</div>
 <script>
 	$(function(){
-		$('#monkey').draggable();
+		$('#monkey').draggable({
+			start: function() {
+				$(this).css('animation', 'none');
+			}
+		});
 	});
 </script>
 	<h2> Aesop's Fable </h2>
