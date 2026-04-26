@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Dancing Monkeys</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Diplomata&family=Fascinate+Inline&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<style>
+	body {
+		background:#172500 ;
+		margin: 0;
+	} img {
+		width: 600px;
+		height: 350px;
+		box-shadow: 2px 3px 6px black;
+		margin-top: 8px;
+	} h1 {
+		font: 800 39px/1.4em 'Raleway';
+		margin-bottom: 0px;
+		background: url("dancing.jpg");
+		background-size: cover;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+		filter: drop-shadow(5px 5px 0 black);
+	} h2 {
+		font: 800 25px/1.4em 'Raleway';
+		color: antiquewhite;
+		text-shadow: 5px 5px 0 black;
+		margin-top: 0;
+		background: #2F3629;
+	} #body {
+		font: 12pt/1.3em 'Fira Sans';
+		color: antiquewhite;
+		text-shadow: 1px 2px 0 black;
+		width: 70ch;
+	} .monkey {
+		width: 400px;
+		height: auto;
+		position: fixed;
+		top: 40px;
+		left: 300px;
+		cursor: grab;
+		box-shadow: none;
+		z-index: 999;
+	}
+	
+	.monkey:active {
+		cursor: grabbing;
+		
+	}
+</style>
+</head>
+
+<body>
+	<div class="title-row">
+		<h1> The Dancing Monkeys </h1>
+		<img src="monkeygif.gif" alt="monkeygif" class="monkey" id="monkey">
+	</div>
+<script>
+	$(function(){
+		$('#monkey').draggable();
+	});
+</script>
+	<h2> Aesop's Fable </h2>
+	<img src="dancinganimals.jpg">
+	<p id="body"> A PRINCE had some Monkeys trained to dance. Being naturally great mimics of men's actions, they showed themselves most apt pupils, and when arrayed in their rich clothes and masks, they danced as well as any of the courtiers.  The spectacle was often repeated with great applause, till on one occasion a courtier, bent on mischief, took from his pocket a handful of nuts and threw them upon the stage.  The Monkeys at the sight of the nuts forgot their dancing and became (as indeed they were) Monkeys instead of actors.  Pulling off their masks and tearing their robes, they fought with one another for the nuts. The dancing spectacle thus came to an end amidst the laughter and ridicule of the audience.</p>
+</body>
+</html>
